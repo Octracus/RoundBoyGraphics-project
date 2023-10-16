@@ -1,0 +1,723 @@
+/*CSS for mobile phones FIRST. All CSS styles seen here apply to mobile phones(includes tablets and other smartphones*/
+
+/* properties for the entire page. Changes in root affects the whole page*/
+:root {
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+  --secondary-color: #cdfgj0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*font properties*/
+body {
+  /*font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;*/
+  font-family: "Montserrat", sans-serif;
+  background: black;
+  color: #999999;
+}
+
+h1 {
+  color: white;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+/*Banner picture properties*/
+.showcase {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  background: url(images/Round\ Boy\ Graphics\ Logojpg.jpg) no-repeat scroll
+    contain;
+}
+
+.showcase-top {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-top img {
+  position: absolute;
+  max-width: 250px;
+  top: 50px;
+  transform: translate(-4%, -60%);
+}
+
+.showcase-top li {
+  float: right;
+  display: inline;
+  color: red;
+  background: var(--primary-color);
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  transform: translate(25%, 20%);
+}
+
+/*button properties on the site*/
+.btn:hover {
+  color: rgba(68, 142, 142, 60%);
+}
+
+/* designs for the four divs (each div has an image and text beside it*/
+
+.card-0,
+.card-1,
+.card-2,
+.card-3 {
+  border-top: 10px solid gray;
+  padding: 50px;
+}
+
+.style-cards h1 {
+  font-size: smaller;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+/*div 1 which contains an image and some text*/
+.card-0 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 2px 4px 5px;
+  margin-top: 500px;
+}
+
+.desc-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-0 img {
+  max-width: 100%;
+  height: auto;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+/*div 2 which contains an image and some text*/
+.card-1 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 40px 50px;
+}
+
+.desc-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-1 img {
+  max-width: 100%;
+  height: auto;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+/*div 3 which contains an image and some text*/
+.card-2 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 40px, 45px 50px;
+}
+
+.desc-2 {
+  display: inline-grid;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-2 img {
+  max-width: 100%;
+  height: auto;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+/*div 4 which contains an image and some text*/
+.card-3 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+}
+
+.desc-3 {
+  padding: 50px 20px;
+  display: inline-grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-3 img {
+  max-width: 100%;
+  height: auto;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+/*Top navbar design*/
+.top-bar {
+  width: 1000px;
+  background: rgb(68, 142, 142);
+}
+
+.top-bar-links {
+  float: left;
+}
+
+.top-bar-links ul {
+  margin: 15px;
+  list-style: none;
+}
+
+.top-bar-links ul li {
+  padding: 0 10px;
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+.top-bar-links ul li:last-child {
+  border: 0;
+}
+
+.top-bar-links ul li a {
+  color: white;
+}
+/*search button design and input*/
+.site-search {
+  padding: 3px 5px 3px 10px;
+  margin: 15px;
+  float: right;
+  background: white;
+  border-radius: 10px;
+}
+
+.site-search input {
+  border: 0;
+  float: left;
+}
+
+.site-search button {
+  width: 18px;
+  height: 18px;
+  background: url(images/search.png);
+  border: 0;
+  float: right;
+}
+
+header .logo {
+  margin-top: 30px;
+  margin-left: 20px;
+  float: left;
+}
+
+header .logo h1 {
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  font-variant: small-caps;
+}
+
+header .socialmedia {
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+header .socialmedia ul {
+  list-style: none;
+}
+
+header .socialmedia ul li {
+  display: inline;
+}
+
+header .socialmedia ul li a {
+  margin-left: 5px;
+  padding: 6px;
+  background: #444;
+  color: #fff;
+  display: inline-block;
+  border-radius: 20px;
+}
+/*nav bar changes color to orange on hover*/
+header .socialmedia ul li a:hover {
+  background: orange;
+}
+/*navbar color and lists in navbar*/
+nav {
+  margin-top: 20px;
+  background: rgb(84, 111, 65);
+  background: linear-gradient(#0953a2, #2a72c4, #063262);
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 40px 10px 40px;
+  display: inline-block;
+}
+/*navbar texts change color to red on hover*/
+nav ul li a:hover {
+  color: red;
+}
+
+div.intro {
+  width: 970px;
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+div.intro div.introimage {
+  width: 400px;
+  float: left;
+}
+
+div.introimage img {
+  float: left;
+}
+
+div.intro div.introtext {
+  width: 570px;
+  float: left;
+}
+
+div.introtext h1 {
+  font-weight: normal;
+  margin-top: 100px;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+
+div.introtext p {
+  font-size: 150px;
+}
+
+div.introtext a {
+  text-transform: uppercase;
+  float: right;
+}
+
+div.homecontent {
+  width: 1000px;
+  background: rgb(68, 142, 142);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+div.home-col {
+  margin-left: 15px;
+  width: 313.33px;
+  float: left;
+}
+
+div.home-col img {
+  width: 313.33px;
+}
+
+div.home-col h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+div.home-col a {
+  float: right;
+}
+
+div.services {
+  margin-bottom: 20px;
+}
+
+div.services img {
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+}
+
+div.services p {
+  margin-top: 0;
+}
+
+div.quote {
+  float: left;
+}
+
+div.quote i {
+  float: left;
+}
+
+div.quote h3 {
+  margin-top: 20px;
+  margin-left: 15px;
+  float: left;
+}
+
+div.quote p {
+  clear: both;
+}
+
+footer {
+  width: 1000px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+div.footercol {
+  width: 231.25px;
+  float: left;
+  margin-left: 15px;
+  border-top: 1px rgb(68, 142, 142);
+}
+
+div.footercol h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+div.tweet p {
+  font-size: 16px;
+}
+
+ul.quicklinks {
+  margin-top: 10px;
+  list-style: none;
+}
+
+ul.quicklinks li a {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-bottom: 1px solid #aaa;
+  color: #666;
+}
+
+ul.quicklinks li a::before {
+  content: "» ";
+}
+
+ul.quicklinks li a:hover {
+  color: red;
+}
+
+div.blogpost {
+  clear: both;
+}
+
+div.blogpost h5 {
+  font-size: 20px;
+}
+
+div.blogpost p {
+  font-size: 16px;
+}
+
+div.blogpost a.readmore {
+  float: right;
+}
+/*form details and form properties: background color, width and margin*/
+form.contact input,
+form.contact textarea {
+  background: #eee;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 221.25px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+form.contact textarea {
+  height: 130px;
+}
+
+form.contact button {
+  background: #eee;
+  color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/*copyright divs*/
+div.copyrights {
+  width: 1000px;
+  background: #eee;
+  float: left;
+}
+
+div.left {
+  float: left;
+  margin: 20px;
+}
+
+div.right {
+  float: right;
+  margin: 20px;
+}
+
+/*footer properties: margins, color, font-size*/
+.footer {
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+  margin-top: 75px;
+}
+
+.footer,
+.footer a {
+  color: #757575;
+  font-size: 0.8rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: inline-block;
+}
+
+.footer p {
+  color: #757575;
+}
+
+.footer li {
+  line-height: 2.4;
+}
+
+hr {
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-width: 8px;
+  color: white;
+}
+
+/* controls how the website should be displayed on screens other than a mobile phone or smartphone*/
+/*CSS styles for laptop or desktop screen*/
+/*If the screen size is 600px or more, these elements and their attributes will take effect*/
+@media only screen and (min-width: 600px) {
+  body,
+  html {
+    background-color: black;
+  }
+
+  /*If the screen size is 600px or more, set the banner(showcase div) to the following properties*/
+  .showcase {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(images/Round\ Boy\ Graphics\ Logojpg.jpg) no-repeat scroll
+      center/cover;
+  }
+
+  .showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+  }
+
+  .showcase-top img {
+    width: 300px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transform: translate(-35% -50%);
+  }
+
+  .showcase-top li {
+    float: right;
+    display: inline;
+    color: red;
+    background: var(--primary-color);
+    padding: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    transform: translate(-28%, 0);
+  }
+
+  .card-0 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    margin-top: 751px;
+  }
+
+  .desc-0 {
+    padding-left: 100px;
+  }
+
+  .card-0 img {
+    max-width: 200%;
+    height: auto;
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  /*div 2 which contains an image and some text*/
+  .card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 40px 50px;
+  }
+
+  .style-cards h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .desc-1 {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-1 img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  /*div 3 which contains an image and some text*/
+  .card-2 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 25px, 45px 50px;
+  }
+
+  .desc-2 {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 70px 45px 50px;
+  }
+
+  .card-2 img {
+    width: auto;
+    height: auto;
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  /*div 4 which contains an image and some text*/
+  .card-3 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  }
+
+  .desc-3 {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-3 img {
+    max-width: 110%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  footer {
+    display: auto;
+    margin-left: -20px;
+  }
+
+  h1 {
+    padding-left: 0px;
+  }
+  #footercol {
+    display: auto;
+    width: 50%;
+  }
+  #copyrights {
+    display: auto;
+  }
+  #left {
+    display: auto;
+    width: auto;
+    font-size: small;
+  }
+  #right {
+    display: auto;
+    width: auto;
+    font-size: small;
+  }
+}

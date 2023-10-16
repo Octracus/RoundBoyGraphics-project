@@ -1,2 +1,4 @@
-# RoundBoyGraphics-project
-A full scale responsive site using html css and some javascript
+# RoundBoy Graphics site
+Fully responsive site made using HTML CSS and some javascript
+
+Further improvements would be appreciated.
