@@ -56,8 +56,8 @@ for (let number = 25; number > 0; --number) {
   console.log(number);
 }
 ///Password check
-let password = "";
-console.log(passsword.length);
+let password = "12345";
+console.log(password.length);
 let userPass = prompt("Enter your password");
 
 for (let pass = 0; pass < password.length; pass++) {
@@ -65,35 +65,37 @@ for (let pass = 0; pass < password.length; pass++) {
     break;
   } else {
     console.log(userPass);
-    userPass = propmt("Wrong password. Try again");
+    userPass = prompt("Wrong password. Try again");
   }
 }
 
 //Functions
 //Function to add two numbers
-function addnumbers(a, b) {
-  return a + b;
+function addnumbers(c, d) {
+  return c + d;
 }
-let addnumbers = (2, 3);
-console.log(addnumbers);
+
+console.log(addnumbers(3, 4));
 
 //or
-function addnumbers(a, b) {
+function addstuff(a, b) {
   alert(a + b);
 }
-addnumbers(2, 3);
 
-let firstname1 = prompt("What is your name?")
-let lastname1 = prompt("What is your name?")
-function nameDisplay(firstname1, lastname1){
-  alert(firstname1 + lastname1 +  "This is your computer")
+addstuff(2, 3);
+
+let firstname1 = prompt("What is your name?");
+let lastname1 = prompt("What is your name?");
+function nameDisplay(firstname1 , lastname1) {
+  alert(firstname1 + lastname1 + " This is your computer");
 }
-nameDisplay(firstname1, lastname1)
+nameDisplay(firstname1, lastname1);
 
 //or
 function details(iname, iage, email) {
   console.log(`Your name is ${iname}`);
   console.log(`You are ${iage} old`);
-  console.log(`This is your ${email} address`)
+  console.log(`This is your ${email} address`);
 }
-details('iname', 'iage', 'email')
+
+details("Jo", 60, "YoMama@gmail.com");
