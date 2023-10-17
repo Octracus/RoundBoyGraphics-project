@@ -83,8 +83,9 @@ function addnumbers(a, b) {
 }
 addnumbers(2, 3);
 
-let userName = prompt("What is your name?")
-function nameDisplay(firstname, lastname){
-  alert(firstname, lastname, "This is your computer")
+let firstname1 = prompt("What is your name?")
+let lastname1 = prompt("What is your name?")
+function nameDisplay(firstname1, lastname1){
+  alert(firstname1 + lastname1 +  "This is your computer")
 }
-nameDisplay(userName)
+nameDisplay(firstname1, lastname1)
