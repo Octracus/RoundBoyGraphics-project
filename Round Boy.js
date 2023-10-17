@@ -49,23 +49,42 @@ if (userAge >= 0 && userAge <= 17) {
 }
 
 //for loop//
-for (let number = 1; number < 26; number++){
-  console.log(number)
+for (let number = 1; number < 26; number++) {
+  console.log(number);
 }
-for (let number = 25; number > 0; --number){
-  console.log(number)
+for (let number = 25; number > 0; --number) {
+  console.log(number);
 }
 ///Password check
 let password = "";
-console.log(passsword.length)
-let userPass = prompt('Enter your password')
+console.log(passsword.length);
+let userPass = prompt("Enter your password");
 
-for (let pass = 0; pass < password.length;pass ++){
-if (password == userPass){
-  break
-}
-  else{
-    console.log(userPass)
-    userPass = propmt('Wrong password. Try again')
+for (let pass = 0; pass < password.length; pass++) {
+  if (password == userPass) {
+    break;
+  } else {
+    console.log(userPass);
+    userPass = propmt("Wrong password. Try again");
   }
 }
+
+//Functions
+//Function to add two numbers
+function addnumbers(a, b) {
+  return a + b;
+}
+let addnumbers = (2, 3);
+console.log(addnumbers);
+
+//or
+function addnumbers(a, b) {
+  alert(a + b);
+}
+addnumbers(2, 3);
+
+let userName = prompt("What is your name?")
+function nameDisplay(first name, lastname){
+  alert(firstname, lastname, "This is your computer")
+}
+nameDisplay(userName)
