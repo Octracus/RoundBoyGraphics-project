@@ -89,3 +89,11 @@ function nameDisplay(firstname1, lastname1){
   alert(firstname1 + lastname1 +  "This is your computer")
 }
 nameDisplay(firstname1, lastname1)
+
+//or
+function details(iname, iage, email) {
+  console.log(`Your name is ${iname}`);
+  console.log(`You are ${iage} old`);
+  console.log(`This is your ${email} address`)
+}
+details('iname', 'iage', 'email')
